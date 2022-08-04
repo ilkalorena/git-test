@@ -21,7 +21,7 @@ export const validateContactForm = (values) => {
     if (!reg.test(values.phoneNum)) {
         errors.phoneNum = 'The phone number should contain only numbers.';
     } else if (values.phoneNum.length != 10) {
-        errors.phoneNum = 'Phone number must be 10 digits long'
+        errors.phoneNum = 'Phone number must be 10 digits long.'
     }
 
     if (!values.email.includes('@')) {
