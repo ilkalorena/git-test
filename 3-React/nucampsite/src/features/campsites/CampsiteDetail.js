@@ -1,9 +1,7 @@
 import { Card, CardImg, CardText, CardBody, Col } from 'reactstrap';
-import { useSelector } from "react-redux";
 
 const CampsiteDetail = ({ campsite }) => {
-    const campsite = useSelector(selectCampsiteById(campsiteId));
-    console.log('campsite:', campsite);
+    const { image, name, description } = campsite;
 
     return (
         <Col md='5' className='m-1'>
